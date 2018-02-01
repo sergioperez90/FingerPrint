@@ -21,7 +21,7 @@
     details += "CPU: " + client.getCPU() +"<br />";
     details += "OS: " + client.getOS() +"<br />";
     details += "Resolution: " + client.getCurrentResolution() +"<br />";
-    details += "Plugins: " + client.getFonts() +"<br />";
+    details += "Plugins: " + client.getPlugins() +"<br />";
 
    
         
