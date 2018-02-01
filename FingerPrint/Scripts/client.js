@@ -23,13 +23,15 @@
     details += "Resolution: " + client.getCurrentResolution() +"<br />";
     details += "Plugins: " + client.getPlugins() +"<br />";
 
-   
-        
+
+    //Save in LocalStorage
+    localStorage.setItem("user_agent", client.getUserAgent());
+    localStorage.setItem("browser", client.getBrowser());
+    console.log(localStorage.user_agent);
+    console.log(localStorage.browser);
 
 
-
-  document.querySelector("#details1").innerHTML = details;
-
-
+    document.querySelector("#details1").innerHTML = details;
 
 });
+
